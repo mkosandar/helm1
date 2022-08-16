@@ -1,0 +1,13 @@
+
+metadata:
+  name: master-service
+  labels:
+    app: master-service
+
+replicaCount: 1
+image:
+  repository: 172.21.0.66:5000/master-service:0.0.1
+  pullPolicy: IfNotPresent
+
+service:
+  targetport: 8183
